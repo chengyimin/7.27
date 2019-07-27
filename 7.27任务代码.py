@@ -3,7 +3,7 @@ import math
 a = float(input("请输入第一条边的长度:"))
 b = float(input("请输入第二条边的长度:"))
 c = float(input("请输入第三条边的长度:"))
-if a+b>c and a-b<c:
+if a+b>c and a-b<c and a+c>b and a-c<b:
     print("这三条边可以构成三角形。")
     l=a+b+c
     p=l/2
@@ -12,7 +12,7 @@ if a+b>c and a-b<c:
 else:
     print("这三条边不能构成三角形。")
 
-# 用户身份验证
+# 用户身份验证1
 print("欢迎进入XX系统，请登录！")
 username = str(input("请输入用户名："))
 password = str(input("请输入密码："))
